@@ -1,0 +1,104 @@
+.sidebar {
+  width: 100%;
+  max-width: 16rem; /* md:w-64 */
+  border-right: 1px solid #d1d5db;
+  flex-shrink: 0;
+}
+
+.sidebar-header {
+  padding: 1rem;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.sidebar-title {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: bold;
+}
+
+.sidebar-controls {
+  padding: 1rem;
+}
+
+.sidebar-button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem; /* rounded-md */
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar-button:hover {
+  background-color: #f3f4f6; /* gray-100 */
+}
+
+.sidebar-notes-list {
+  overflow-y: auto;
+}
+
+.sidebar-note-item {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-note-item:hover {
+  background-color: #f3f4f6; /* gray-100 */
+}
+
+.sidebar-note-selected {
+  font-weight: bold;
+}
+
+.note-item-content {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.note-title {
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.note-createdAt {
+  font-size: 12px;
+  color: gray;
+}
+
+.note-status {
+  font-size: 12px;
+  color: green;
+}
+
+.sidebar-note-item.selected {
+  background-color: #f0f0f0;  /* Change the background color for the selected note */
+  font-weight: bold;  /* Optional: make the text bold */
+}
+
+.delete-note-button {
+  opacity: 0;
+  background: none;
+  border: none;
+  padding: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #6b7280;
+  transition: all 0.2s ease;
+  visibility: hidden;
+}
+
+.sidebar-note-item:hover .delete-note-button {
+  opacity: 1;
+  visibility: visible;
+}
+
+.delete-note-button:hover {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}

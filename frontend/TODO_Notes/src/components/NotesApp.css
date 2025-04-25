@@ -1,0 +1,17 @@
+.notes-app-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    border: 1px solid #d1d5db; /* Tailwind's gray-300 */
+  }
+  
+  .sidebar-container {
+    overflow: auto;
+    border-bottom: 1px solid #d1d5db;
+  }
+  
+  .main-content {
+    display: flex;
+    flex: 1;
+  }
+  
